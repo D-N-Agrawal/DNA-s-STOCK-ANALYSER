@@ -54,10 +54,6 @@ def cross_cmd(ss):
         elif(ss == 'year'):
             command_to_spark[1] = command_to_spark[1] + ' ' + str(listbox.get(listbox.curselection()))
 
-
-        Lab = Label(dna, font = 20, text = 'show commands for: ' + command_to_spark[1])
-        Lab.place(x = 250, y = 400)
-        
         var = StringVar()
         R1 = Radiobutton(dna, text = "-CSA", variable = var, value = "-CSA")
         R1.place(x = 300, y = 450)
@@ -96,9 +92,6 @@ def ohlc_cmd(ss):
             command_to_spark[1] = command_to_spark[1] + ' ' + str(listbox.get(listbox.curselection()))
 
         var = IntVar()
-        Lab = Label(dna, font = 20, text = 'show commands for: ' + command_to_spark[1])
-        Lab.place(x = 250, y = 400)
-
         Lab1 = Label(dna, text = 'month FORMAT: Mon')
         Lab1.place(x = 300, y = 450)
         En1 = Entry(dna, bd = 5, width = 6)
